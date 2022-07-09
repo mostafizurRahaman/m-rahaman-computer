@@ -235,7 +235,8 @@ background-position: left center;
 }
 #work_section h2{
 border-bottom: 5px solid #000;
-color:#000;
+color:rgb(255, 255, 255);
+text-shadow: 2px 2px 33px #000;
 
 }
 
