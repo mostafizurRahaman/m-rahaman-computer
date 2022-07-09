@@ -23,6 +23,8 @@ h1,h2,h3,h4,h5,h6{
 }
 h2{
   font-size: 30px;
+  text-transform: uppercase;
+  color: #fff;
 }
 h3{
   font-size: 24px;
@@ -219,3 +221,100 @@ p{
 .service_container .box a{
    color: #fff;
 }
+
+/* Work section style start  */
+#work_section{
+flex-direction: column;
+row-gap: 30px;
+align-items: center;
+padding:30px 0px 40px;
+background: linear-gradient(rgb(7, 244, 42,0.5),rgb(7, 244, 42,0.5)),url(img/work-sec-bg.jpg) no-repeat;
+background-size: cover;
+background-position: left center;
+
+}
+#work_section h2{
+border-bottom: 5px solid #000;
+color:#000;
+
+}
+
+.works_container{
+flex-wrap: wrap;
+width: 960px;
+justify-content: space-around;
+row-gap: 50px;
+
+}
+.works_container .work{
+  width: 290px;
+  height: 190px;
+  background: #f00;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.works_container .work figure{
+  width: 100%;
+  height: 190px;
+  position: relative;
+
+ 
+}
+.works_container .work img{
+  width: 100%;
+  height: 190px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.works_container .work figcaption {
+    position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  color: orange;
+  display: none;
+  border-radius:10px ;
+  -webkit-border-radius:10px ;
+  -moz-border-radius:10px ;
+  -ms-border-radius:10px ;
+  -o-border-radius:10px ;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+}
+.works_container .work p{
+ position:absolute;
+ left: 50%;
+ top: 50%;
+ color: #fff;
+ transform: translate(-50%,-50%);
+ -webkit-transform: translate(-50%,-50%);
+ -moz-transform: translate(-50%,-50%);
+ -ms-transform: translate(-50%,-50%);
+ -o-transform: translate(-50%,-50%);
+ font-size: 20px;
+ text-shadow: 1px 1px #fff;
+ transition: 0.5s all ease;
+ -webkit-transition: 0.5s all ease;
+ -moz-transition: 0.5s all ease;
+ -ms-transition: 0.5s all ease;
+ -o-transition: 0.5s all ease;
+}
+.works_container .work:hover figcaption{
+	display: inline-block;
+  background: rgba(0, 0, 0, 0.8);
+  
+}
+
+
