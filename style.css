@@ -257,14 +257,14 @@ row-gap: 50px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.works_container .work figure{
+ .work figure{
   width: 100%;
   height: 190px;
   position: relative;
 
  
 }
-.works_container .work img{
+.work img{
   width: 100%;
   height: 190px;
   border-radius: 10px;
@@ -273,8 +273,8 @@ row-gap: 50px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
 }
-.works_container .work figcaption {
-    position: absolute;
+.work figcaption {
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -282,7 +282,6 @@ row-gap: 50px;
   text-align: center;
   text-transform: uppercase;
   color: orange;
-  display: none;
   border-radius:10px ;
   -webkit-border-radius:10px ;
   -moz-border-radius:10px ;
@@ -293,8 +292,10 @@ row-gap: 50px;
   -moz-transition: 0.5s all ease;
   -ms-transition: 0.5s all ease;
   -o-transition: 0.5s all ease;
+  background: rgb(21, 21, 21);
+  opacity: 0;
 }
-.works_container .work p{
+.work p{
  position:absolute;
  left: 50%;
  top: 50%;
@@ -313,9 +314,12 @@ row-gap: 50px;
  -o-transition: 0.5s all ease;
 }
 .works_container .work:hover figcaption{
-	display: inline-block;
-  background: rgba(0, 0, 0, 0.8);
+	opacity: 0.9;
+ 
   
 }
 
-
+.work:hover p{
+letter-spacing: 2px;
+font-style: italic;
+ }
